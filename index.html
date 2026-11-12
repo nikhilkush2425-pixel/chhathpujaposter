@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhath Puja Poster Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌅 पगरा प्रसाद गिरी की तरफ़ से आप सभी को छठ पूजा की हार्दिक शुभकामनाएँ एवं बधाई।</h1>
+        <p>अपना नाम और फोटो लगाकर सुंदर पोस्टर बनाएँ</p>
+    </header>
+
+<section class="ghat-photo-box">
+    <img src="chhath-background.jpg" alt="हमारा छठ पूजा घाट">
+    <h2>🌅 हमारा छठ पूजा घाट 🌅</h2>
+</section>
+
+
+    <main>
+        <section class="form-box">
+            <h2>अपनी जानकारी भरें</h2>
+
+            <label>अपना नाम लिखें</label>
+            <input type="text" id="userName" placeholder="अपना नाम लिखें">
+
+            <label>अपनी फोटो चुनें</label>
+            <input type="file" id="userPhoto" accept="image/*">
+
+            <button onclick="generatePoster()">
+                पोस्टर बनाएँ
+            </button>
+        </section>
+
+        <section class="poster" id="poster">
+        
+<div class="festival-scene">
+    <img
+        src="./chhath-ghat.jpg"
+        alt="हमारा छठ पूजा घाट"
+        class="ghat-image"
+    >
+    
+</div>
+
+<div class="name-box">
+    <h2>🌸 सादर शुभकामनाएँ 🌸</h2>
+    <p><b>ग्राम प्रधान:</b>रमेश गुप्ता</p>
+    <p><b>सहयोगी:</b> सभी ग्रामवासी</p>
+    <p><b>विशेष सहयोग:</b>राज शर्मा, निखिल कुशवाहा, आदर्श शर्मा, संदीप गुप्ता, विकास कुशवाहा, बृजकिशोर कुशवाहा, अंकित, आशीष, संजीत, पट्टू, पवन, पतरू इत्यादि।</p>
+</div>
+
+
+
+           
+            
+
+            <div class="photo-area">
+                <img id="posterPhoto" src="" alt="आपकी फोटो">
+            </div>
+
+            <h2 id="posterName">आपका नाम</h2>
+
+            <p>
+                छठी मैया आप सभी के जीवन में
+                सुख, शांति और समृद्धि लाएँ।
+            </p>
+
+            <h3>🙏 जय छठी मैया 🙏</h3>
+        </section>
+
+<button id="downloadBtn" onclick="downloadPoster()">
+    📥 Download Poster
+</button>
+
+    </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff1d6, #ffb36b, #ff6b35);
+    min-height: 100vh;
+    padding: 25px;
+}
+
+header {
+    text-align: center;
+    color: #7b2400;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.form-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 8px 25px #8b3b2240;
+}
+
+.form-box h2 {
+    color: #a83b00;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+    color: #542500;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e5a16d;
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 22px;
+    background: #d84315;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a8320d;
+}
+
+.poster {
+    width: 350px;
+    min-height: 510px;
+    padding: 25px;
+    text-align: center;
+    border: 7px solid #ffcf68;
+    border-radius: 15px;
+    background: linear-gradient(#fff2c9, #ffad5c, #d94b16);
+    box-shadow: 0 10px 30px #7b240055;
+    color: #762300;
+}
+
+.sun {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.poster h2 {
+    font-size: 27px;
+    margin: 10px 0;
+}
+
+.poster h3 {
+    margin: 12px 0;
+}
+
+.poster p {
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.photo-area {
+    width: 120px;
+    height: 120px;
+    border: 4px solid #fff2b5;
+    border-radius: 50%;
+    margin: 20px auto;
+    overflow: hidden;
+    background: #fff;
+}
+
+.photo-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+
+/* Mobile, Tablet and Laptop Responsive Design */
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.form-box {
+    width: 320px;
+    max-width: 100%;
+}
+
+.poster {
+    width: 350px;
+    max-width: 100%;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    main {
+        gap: 25px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    header {
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 23px;
+        line-height: 1.4;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+    }
+
+    .form-box {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    .poster {
+        width: 100%;
+        max-width: 400px;
+        min-height: 490px;
+        padding: 20px;
+    }
+
+    .poster h2 {
+        font-size: 24px;
+    }
+
+    .poster p {
+        font-size: 15px;
+    }
+
+    button {
+        padding: 14px;
+        font-size: 16px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 360px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .poster {
+        padding: 15px;
+    }
+
+    .poster h2 {
+        font-size: 21px;
+    }
+}
+.festival-scene {
+    background: linear-gradient(
+        to bottom,
+        #ffdf91,
+        #ff9c4a,
+        #e85d32
+    );
+    border-radius: 15px;
+    padding: 15px 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.festival-scene .sun {
+    font-size: 65px;
+    margin: 5px;
+}
+
+.sky-text {
+    color: #7b2400;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.river {
+    background: #3b9ac5;
+    color: white;
+    font-size: 23px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.puja-items {
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+/* YOUR REAL CHHATH GHAT PHOTO BACKGROUND */
+
+body {
+    background-image:
+        linear-gradient(
+            rgba(20, 20, 20, 0.25),
+            rgba(20, 20, 20, 0.25)
+        ),
+        url("chhath-background.jpg");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Purane decorative waves ko hide karein */
+body::before {
+    content: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    body {
+        background-attachment: scroll;
+        background-position: center center;
+    }
+}
+
+/* Show Full Chhath Ghat Image */
+
+.festival-scene {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.festival-scene img.ghat-image {
+    display: block;
+    width: 100%;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center;
+    border-radius: 12px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .festival-scene {
+        padding: 6px;
+    }
+
+    .festival-scene img.ghat-image {
+        width: 100%;
+        height: auto !important;
+    }
+}
+
+/* Beautiful Chhath Ghat Photo Border */
+
+.ghat-photo-box {
+    width: 92%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #fff4b0,
+        #ff9d00,
+        #ffdf70,
+        #e87500
+    );
+
+    border: 5px solid #ffd700;
+    border-radius: 25px;
+
+    box-shadow:
+        0 0 0 4px #fff4c2,
+        0 10px 30px rgba(90, 35, 0, 0.45);
+
+    text-align: center;
+}
+
+.ghat-photo-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 17px;
+    object-fit: contain;
+}
+
+.ghat-photo-box h2 {
+    color: #852900;
+    font-size: 25px;
+    margin: 12px;
+    font-weight: bold;
+}
+
+/* Mobile Design */
+@media (max-width: 600px) {
+    .ghat-photo-box {
+        width: 96%;
+        padding: 7px;
+        border-width: 4px;
+        border-radius: 18px;
+    }
+
+    .ghat-photo-box img {
+        border-radius: 12px;
+    }
+
+    .ghat-photo-box h2 {
+        font-size: 19px;
+    }
+}
+
+/* Website Background Colour */
+
+body {
+    background: linear-gradient(
+        135deg,
+        #eadcff,
+        #fff1c2,
+        #d9f5df
+    ) !important;
+
+    background-image: none !important;
+    background-attachment: scroll;
+    min-height: 100vh;
+}
+
+
